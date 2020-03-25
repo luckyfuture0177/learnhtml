@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<pre>
+这是
+预格式文本。
+它保留了      空格
+和换行。
+</pre>
+<p>pre 标签很适合显示计算机代码：</p>
+
+<pre>
+    from sklearn.preprocessing import MinMaxScaler
+    minmax_scaler=MinMaxScaler()
+    minmax_scaler.fit(housing)   #进行内部拟合，内部参数会发生变化
+    scaler_housing=minmax_scaler.transform(housing)
+    scaler_housing=pd.DataFrame(scaler_housing,columns=housing.columns)
+
+    mm=MinMaxScaler()
+    mm.fit(t)
+    scaler_t=mm.transform(t)
+    scaler_t=pd.DataFrame(scaler_t,columns=t.columns)
+
+</pre>
+
+</body>
+</html>
